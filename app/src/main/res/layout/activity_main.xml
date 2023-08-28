@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:backgroundTint="#009688"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="AppMatrícula"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/matricula"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerContainer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="293dp"
+        android:text="Matrícula"
+        android:textSize="12dp" />
+
+
+    <EditText
+        android:id="@+id/Alumno"
+        android:layout_width="532dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matricula"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre Completo"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/Escuela"
+        android:layout_width="532dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Alumno"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre de la Escuela"
+        android:textSize="10dp" />
+    <EditText
+        android:id="@+id/Carrera"
+        android:layout_width="532dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Escuela"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre de la Carrera"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/Documentos"
+        android:layout_width="462dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Carrera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="130dp"
+        android:text="Documentos"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:id="@+id/Carnet_Biblioteca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Documentos"
+        android:layout_marginTop="0dp"
+        android:text="Carnet Biblioteca"
+        android:textSize="10dp"/>
+
+    <CheckBox
+        android:id="@+id/Carnet_Pasaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/Carnet_Biblioteca"
+        android:text="Carnet Medio Pasaje"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/Numero_Cuotas"
+        android:layout_width="528dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Carnet_Pasaje"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="64dp"
+        android:text="Nùmeros de Cuotas"
+        android:textSize="12sp" />
+
+
+    <RadioButton
+        android:id="@+id/Cuotas2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Numero_Cuotas"
+        android:text="2"
+        android:textSize="10dp"/>
+
+
+    <RadioButton
+        android:id="@+id/Cuotas5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cuotas2"
+        android:text="5"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/Costo_Carrera"
+        android:layout_width="532dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cuotas5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:text="Costo_Carrera"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/D_Costo_Carrera"
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Costo_Carrera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="149dp"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/Pension"
+        android:layout_width="531dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/D_Costo_Carrera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="61dp"
+        android:text="Pesiòn"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/D_Pesion"
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pension"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="149dp"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number"
+        android:textSize="10dp"/>
+
+
+    <TextView
+        android:id="@+id/Gastos_Adicionales"
+        android:layout_width="519dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/D_Pesion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="73dp"
+        android:text="Gastos Adicionales"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/D_Gastos_Adicionales"
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gastos_Adicionales"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="149dp"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number"
+        android:textSize="10dp"/>
+
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="513dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/D_Gastos_Adicionales"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="79dp"
+        android:text="Total a Pagar"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/D_Total"
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Total"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="149dp"
+        android:ems="10"
+        android:hint="$"
+        android:inputType="number"
+        android:textSize="12dp"/>
+
+
+    <Button
+        android:id="@+id/Calcular"
+        android:layout_width="118dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/D_Total"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20px"
+        android:layout_marginTop="14dp"
+        android:text="Calcular"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/Imprimir"
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/D_Total"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/Calcular"
+        android:text="Imprimir"
+        android:textSize="10dp" />
+
+
+</RelativeLayout>

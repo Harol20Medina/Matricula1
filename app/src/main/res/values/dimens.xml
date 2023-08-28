@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamaño_letra">30dp</dimen>
+    <dimen name="titulo">25dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
